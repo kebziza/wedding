@@ -1,0 +1,74 @@
+/*==========================
+ Timeline Styles
+ =========================*/
+
+#timeline ul {
+	list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#timeline ul li {
+	background-image: url(img/love.svg), url(img/vline.png);
+	background-position: center top, center top;
+	background-repeat: no-repeat, repeat-y;
+  margin-bottom: 48px;
+}
+#timeline ul li::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#timeline ul li > div {
+  width: 50%;
+}
+#timeline ul li > div:first-child {
+  float: left;
+  text-align: right;
+  padding-right: 48px;
+}
+#timeline ul li > div:last-child {
+  float: right;
+  text-align: left;
+  padding-left: 48px;
+}
+#timeline ul li.current-day {
+  background: none;
+}
+
+/* sm */
+@media (max-width: 992px) {
+
+
+
+}
+
+/* xs */
+@media (max-width: 767px) {
+
+  #timeline ul li {
+    background-image: none !important;
+    position: relative;
+    margin-bottom: 32px;
+    padding-top: 42px;
+    padding-bottom: 16px;
+    border-bottom: solid #ddd 1px;
+  }
+  #timeline ul li.current-day {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  #timeline ul li > div:first-child,
+  #timeline ul li > div:last-child {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  #timeline ul li .datetime {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+}

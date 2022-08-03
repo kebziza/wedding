@@ -1,0 +1,724 @@
+/* Шрифты */
+
+/* Основные стили */
+* {
+  font-weight: normal;
+}
+body {
+  font-size: 18px;
+}
+h1, h2, h3, h4 {
+  color: #363838;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-weight: 600;
+}
+a {
+  color: #84898c;
+}
+a:hover {
+  color: #363838;
+}
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #363838;
+}
+p, li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: #363838;
+}
+ul li:last-child,
+ol li:last-child {
+  margin-bottom: 0 !important;
+}
+img {
+  vertical-align: bottom;
+}
+span {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+label {
+  color: #363838;
+  font-size: 16px;
+}
+.text p:last-child {
+  margin-bottom: 0;
+}
+.form-control,
+.form-control:focus,
+.form-control:active,
+.form-control:not(:empty) {
+  box-shadow: none;
+  border-color: #ddd;
+  background-color: transparent;
+}
+/*.modal .modal-content .modal-footer {
+  padding: 24px;
+  padding-top: 0;
+}*/
+.toast-message {
+  font-size: 14px;
+}
+
+/* Кнопки */
+.btn {
+  min-width: 64px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 16px;
+  border-radius: 24px;
+  transition: .2s;
+  color: #363838;
+  background-color: transparent;
+  border: none;
+}
+.btn:active,
+.btn:focus,
+.btn:hover {
+  outline: none !important;
+  box-shadow: none;
+  color: #363838;
+  background-color: #fef7f8;
+}
+.btn:disabled {
+  background-color: #84898c;
+  color: #363838;
+}
+
+/* Primary */
+.btn-primary {
+  color: #fff;
+  background-color: #dc848c;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+  color: #fff;
+  background-color: #c2747b;
+  box-shadow: none;
+}
+
+/* Секция */
+.section {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 96px;
+  text-align: center;
+  border-bottom: solid #ddd 1px;
+}
+.section h2 {
+  font-size: 34px;
+}
+.section h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.section h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.section .section-body {
+  width: 768px;
+  margin: 0 auto;
+}
+
+/* Первый блок */
+
+/* Логотип */
+
+/* Меню */
+.section-first .section-body-menu {
+  margin-bottom: 64px;
+}
+.section-first .section-body-menu ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /*height: 18px;*/
+}
+.section-first .section-body-menu ul li {
+  display: inline-block;
+  margin: 0 12px 0;
+  line-height: 18px;
+}
+.section-first .section-body-menu ul li a {
+  padding: 0;
+  font-size: 18px;
+  line-height: 18px;
+  transition: .2s;
+}
+.section-first .section-body-menu ul li a:hover {
+  text-decoration: none;
+}
+
+/* Жених и невеста */
+.section-first .section-body-couple {
+  margin-bottom: 64px;
+}
+.section-first .section-body-couple *:last-child {
+  margin-bottom: 0;
+}
+
+/* Обратный отсчет */
+.section-first .section-body-counter h3 {
+  text-transform: none;
+  font-size: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.section-first .section-body-counter .countdown {
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+}
+.section-first .section-body-counter .countdown .ClassyCountdown-wrapper > div {
+  margin: 0 10px;
+  vertical-align: bottom;
+}
+.section-first .section-body-counter .countdown .ClassyCountdown-value > div {
+  color: #363838;
+  font-size: 42px;
+  margin-top: 16px;
+}
+.section-first .section-body-counter .countdown .ClassyCountdown-value > span {
+  color: #84898c;
+  font-size: 20px !important;
+  margin-top: 12px;
+  display: inline-block;
+}
+
+/* Гость */
+.section-guest .tablenum p {
+  text-align: center;
+}
+.section-guest .tablenum p span {
+  /*color: #363838;*/
+  color: #fff;
+  display: inline-block;
+  padding: 16px;
+  line-height: 20px;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+.section-guest .btn-wrapper {
+  margin-top: 24px;
+}
+
+/* Обращения */
+.section-invite .section-body-invite .text {
+  margin-bottom: 36px;
+  color: #84898c;
+}
+.section-invite .section-body-invite .greeting {
+  width: 768px;
+  height: 432px;
+  background-color: #000;
+  text-align: center;
+  margin: 0 auto 64px;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+.section-invite .section-body-invite .greeting iframe {
+  width: 768px !important;
+  height: 432px !important;
+  border-radius: 16px;
+}
+
+/* Молодожены */
+.section-invite .section-body-newlyweds {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-invite .section-body-newlyweds .item {
+  margin: 0 48px;
+}
+.section-invite .section-body-newlyweds .item img {
+  width: 214px;
+  height: 214px;
+  /*width: 100%;*/
+  height: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  transition: .2s;
+  border: solid #fff 7px;
+  margin-bottom: 16px;
+}
+.section-invite .section-body-newlyweds .item img:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+}
+.section-invite .section-body-newlyweds .item h3 {
+  margin-bottom: 0;
+}
+
+/* ЧАВО / Опросник */
+.section-faq ul,
+.section-pool ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.section-faq ul li,
+.section-pool ul li {
+  padding-bottom: 32px;
+  margin-bottom: 24px;
+  border-bottom: solid #ddd 1px;
+}
+.section-faq ul li:last-child,
+.section-pool ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* ЧАВО */
+.section-faq ul li .file {
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+.section-faq ul li .file img {
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+/* Опросник */
+.section-pool .section-body form {
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .1);
+}
+.section-pool ul li .form-group {
+  margin-bottom: 0;
+}
+.section-pool ul li .radio,
+.section-pool ul li .checkbox {
+  text-align: left;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  padding-top: 4px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.section-pool ul li .radio:last-child,
+.section-pool ul li .checkbox:last-child {
+  margin-bottom: 0;
+}
+.section-pool ul li .radio input[type=radio],
+.section-pool ul li .checkbox input[type=checkbox] {
+  margin-top: 2px;
+}
+.pools-comment .form-group {
+  margin-bottom: 0;
+}
+.section-pool .btn-wrapper {
+  margin-top: 24px;
+}
+
+/* Love Story и Свадебные фотографии */
+
+/* Story, Photos */
+.gallery {
+  position: relative;
+  margin: 0;
+  padding: 12px;
+  background-color: #fef7f8;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.gallery::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.gallery li {
+  position: relative;
+  list-style: none;
+  width: 20%;
+  margin: 0;
+  /*float: left;*/
+  padding: 4px;
+  transition: .2s;
+  overflow: hidden;
+}
+.gallery li img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Инстаграм */
+
+/* Расписание дня */
+
+/* Таймлайн */
+#timeline ul li {
+  background-image: url('/layouts/templates/_shared/css/img/timeline-ico.png'), url('/layouts/templates/_shared/css/img/timeline-line.png');
+}
+#timeline ul li.current-day h3 {
+  margin-bottom: 0;
+}
+#timeline .details {
+  position: relative;
+}
+#timeline p.title {
+  font-weight: 600;
+}
+#timeline p.addr {
+  font-size: 16px;
+  color: #84898c;
+  font-style: italic;
+  font-family: 'Times New Roman';
+}
+#timeline p.addr span.value {
+  transition: .2s;
+  border-bottom: dashed #84898c 1px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+#timeline p.addr span.value:hover {
+  border-bottom: dashed transparent 1px;
+}
+
+/* Карты */
+.section-register,
+.section-rest {
+  border-bottom: none !important;
+  padding-bottom: 0;
+}
+.section-register .section-body,
+.section-rest .section-body {
+  width: 100%;
+}
+.section-register .map-wrapper,
+.section-rest .map-wrapper {
+  width: 100%;
+  min-height: 400px;
+  background: #ddd;
+}
+.section-register .map-addr-wrapper,
+.section-rest .map-addr-wrapper {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.section-register .map-addr-wrapper *:last-child,
+.section-rest .map-addr-wrapper *:last-child {
+  margin-bottom: 0;
+}
+
+/* Наверх */
+.section-totop {
+  border-bottom: none !important;
+  padding-bottom: 72px;
+}
+.section-totop .arrow {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  cursor: pointer;
+  opacity: .8;
+  transition: .2s;
+  background-image: url('/layouts/templates/_shared/css/img/totop.svg');
+  background-size: 64px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.section-totop .arrow:hover {
+  opacity: 1;
+}
+
+/* Футер */
+.footer {
+  position: relative;
+  text-align: center;
+  background: #363838;
+  padding: 16px 0;
+}
+.footer p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.footer p a {
+  color: inherit;
+  border-bottom: dashed #fff 1px;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+.footer p a:hover,
+.footer p a:focus,
+.footer p a:active {
+  text-decoration: none;
+  border-bottom: dashed transparent 1px;
+}
+
+/* Модальные окна */
+.modal .program-map-wrapper {
+  min-height: 300px;
+}
+
+/* Яндекс.Карта */
+ymaps h4 {
+  margin-bottom: 5px;
+}
+ymaps p.date-time {
+  color: #363838;
+  font-style: italic;
+}
+ymaps p.addr {
+  color: #84898c;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* md */
+@media (max-width: 1200px) {
+
+
+
+}
+
+/* sm */
+@media (max-width: 992px) {
+
+  /* Секция */
+  .section .section-body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Обращения */
+  .section-invite .section-body-invite .greeting {
+    width: 736px !important;
+    height: 414px !important;
+  }
+  .section-invite .section-body-invite .greeting iframe {
+    width: 736px !important;
+    height: 414px !important;
+  }
+
+  /* Молодожены */
+  .section-invite .section-body-newlyweds .item {
+    margin: 0 24px;
+  }
+  .section-invite .section-body-newlyweds .item img {
+    width: 168px;
+    height: 168px;
+    border: solid #fff 4px;
+  }
+
+}
+
+/* xs */
+@media (max-width: 767px) {
+
+  /* Основные стили */
+  body {
+    font-size: 16px;
+  }
+  h1, h2, h3, h4 {
+    margin-bottom: 32px;
+  }
+  p, li {
+    font-size: 16px;
+  }
+
+  /* Секция */
+  .section {
+    padding-top: 52px;
+    padding-bottom: 64px;
+  }
+  .section h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .section h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .section h4 {
+    font-size: 16px;
+  }
+  .section .section-body {
+    width: 100%;
+  }
+
+  /* Меню */
+  .section-first .section-body-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .section-first .section-body-menu ul li {
+    display: block;
+  }
+  .section-first .section-body-menu ul li a {
+    font-size: 14px;
+  }
+
+  /* Жених и невеста */
+  .section-first .section-body-couple {
+    margin-bottom: 32px;
+  }
+
+  /* Обратный отсчет */
+  .section-first .section-body-counter h3 {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .section-first .section-body-counter .countdown .ClassyCountdown-wrapper > div {
+    margin: 0 4px;
+    width: calc(25% - 6px);
+  }
+  .section-first .section-body-counter .countdown .ClassyCountdown-wrapper > div:first-child {
+    margin-left: 0;
+  }
+  .section-first .section-body-counter .countdown .ClassyCountdown-wrapper > div:last-child {
+    margin-right: 0;
+  }
+  .section-first .section-body-counter .countdown .ClassyCountdown-value > div {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+  .section-first .section-body-counter .countdown .ClassyCountdown-value > span {
+    font-size: 12px !important;
+    margin-top: 4px;
+  }
+
+  /* Обращение */
+  .section-invite .section-body-invite .text {
+    margin-bottom: 16px;
+  }
+
+  /* Обращения */
+  .section-invite .section-body-invite .greeting {
+    width: 100% !important;
+    height: 320px !important;
+    margin-bottom: 16px;
+  }
+  .section-invite .section-body-invite .greeting iframe {
+    width: 100% !important;
+    height: 320px !important;
+  }
+
+  /* Молодожены */
+  .section-invite .section-body-newlyweds {
+    display: block;
+  }
+  .section-invite .section-body-newlyweds .item {
+    margin: 0 4%;
+    display: inline-block;
+    width: 40%;
+  }
+  .section-invite .section-body-newlyweds .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ЧАВО / Опросник */
+  .section-faq ul li,
+  .section-pool ul li {
+    padding-bottom: 24px;
+    margin-bottom: 16px;
+  }
+
+  /* ЧАВО */
+  .section-faq ul li .file {
+    margin-top: 16px;
+  }
+
+  /* Опросник */
+  .section-pool .section-body form {
+    padding: 16px;
+  }
+  .pools-comment .form-group {
+    margin-bottom: 0;
+  }
+  .section-pool .btn-wrapper {
+    margin-top: 16px;
+  }
+
+  /* Story, Photos */
+  .gallery {
+    padding: 8px;
+  }
+  .gallery li {
+    width: 25%;
+    padding: 4px;
+  }
+  .gallery li img {
+    border-radius: 8px;
+  }
+
+  /* Карты */
+  .section-register,
+  .section-rest {
+    padding-bottom: 0;
+  }
+  .section-register .map-wrapper,
+  .section-rest .map-wrapper {
+    min-height: 220px;
+  }
+
+  /* Наверх */
+  .section-totop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  /* Модальные окна */
+  .modal .program-map-wrapper {
+    min-height: 220px;
+  }
+
+}
+
+/* xxs */
+@media (max-width: 526px) {
+
+  /* Обращения */
+  .section-invite .section-body-invite .greeting {
+    width: 100% !important;
+    height: 240px !important;
+  }
+  .section-invite .section-body-invite .greeting iframe {
+    width: 100% !important;
+    height: 240px !important;
+  }
+
+}
